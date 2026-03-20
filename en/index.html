@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Peru Surf School | Premium Surf Lessons in Lima - Beginner Experts</title>
-    <meta name="description" content="Discover surfing in Lima with a luxury service. Tailored beginner lessons in Makaha, Redondo, and Barranquito beaches. Bilingual coaches.">
+    <title>Peru Surf School | Beginner Surf Lessons in Lima - Your First Wave</title>
+    <meta name="description" content="Discover surfing in Lima with a luxury service. Specialized in beginners: catch your first wave at Makaha, Redondo, or Barranquito. Bilingual coaches.">
 
     <link rel="alternate" hreflang="es" href="https://perusurfschool.com/" />
     <link rel="alternate" hreflang="en" href="https://perusurfschool.com/en/" />
@@ -17,9 +16,16 @@
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         h1, h2 { font-family: 'Playfair Display', serif; }
         .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('../images/hero-luxury.webp');
+            background: linear-gradient(rgba(10, 15, 30, 0.75), rgba(10, 15, 30, 0.85)), 
+                        url('https://images.unsplash.com/photo-1520116280375-3307d5709590?auto=format&fit=crop&w=1920&q=80');
             background-size: cover; background-position: center;
         }
+        .card-bg {
+            background-size: cover; background-position: center; position: relative; overflow: hidden;
+            background-image: url('https://images.unsplash.com/photo-1549241940-1e5b1df08975?auto=format&fit=crop&w=1200&q=80');
+        }
+        .card-bg::after { content:''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(10, 15, 30, 0.65); z-index: 1; }
+        .card-content { position: relative; z-index: 2; }
         .gold-accent { color: #d4af37; }
         .bg-luxury-blue { background-color: #0f172a; }
         .whatsapp-float {
@@ -32,6 +38,9 @@
         .whatsapp-float:hover { transform: scale(1.1); background-color: #128c7e; }
         .map-container { position: relative; padding-bottom: 60%; height: 0; overflow: hidden; border-radius: 1rem; }
         .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+        .fade-in-delayed { animation: fadeIn 0.8s ease-out 0.4s forwards; opacity: 0; }
     </style>
 </head>
 <body class="bg-slate-50">
@@ -51,41 +60,60 @@
     </nav>
 
     <header class="hero-bg h-screen flex flex-col items-center justify-center text-center text-white px-6">
-        <span class="gold-accent uppercase tracking-[0.3em] mb-4 font-semibold text-sm">Ocean Exclusivity</span>
-        <h1 class="text-5xl md:text-8xl mb-6 uppercase tracking-tight">The Art of Gliding</h1>
-        <p class="text-lg md:text-xl mb-12 max-w-2xl font-light leading-relaxed">Tailored surfing experiences in Lima for those seeking excellence and safety.</p>
-        <a href="https://wa.me/51966743495?text=Hi!%20I'd%20like%20to%20inquire%20about%20a%20private%20surf%20lesson" class="border border-white hover:bg-white hover:text-slate-900 px-12 py-4 rounded-full transition duration-500 uppercase text-sm tracking-widest">
+        <span class="gold-accent uppercase tracking-[0.3em] mb-4 font-semibold text-sm fade-in">Ocean Exclusivity</span>
+        <h1 class="text-5xl md:text-8xl mb-6 uppercase tracking-tight fade-in">Your First Wave</h1>
+        <p class="text-lg md:text-xl mb-12 max-w-2xl font-light leading-relaxed fade-in-delayed">Tailored experiences 100% focused on beginners seeking excellence and safety while catching their first wave.</p>
+        <a href="https://wa.me/51966743495?text=Hi!%20I'd%20like%20to%20inquire%20about%20a%20private%20surf%20lesson" class="border border-white hover:bg-white hover:text-slate-900 px-12 py-4 rounded-full transition duration-500 uppercase text-sm tracking-widest fade-in-delayed">
             Inquire Availability
         </a>
     </header>
 
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl text-slate-900 mb-4 italic text-balance">Our Specialty: The Basic Level</h2>
+            <div class="w-20 h-1 bg-luxury-blue mx-auto"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto fade-in shadow-2xl transition duration-500 hover:scale-[1.01]">
+            <div class="card-bg p-12 rounded-3xl h-[450px] flex flex-col justify-end text-white">
+                <div class="card-content space-y-3">
+                    <span class="font-bold gold-accent uppercase tracking-tighter italic text-lg">Full Basic Level</span>
+                    <h3 class="text-3xl font-bold uppercase tracking-tight">From Zero to Catching Your First Wave</h3>
+                    <p class="text-sm md:text-base text-slate-100 leading-relaxed font-light max-w-2xl">
+                        Exclusive focus on beginners. We guarantee you will catch your first wave in the first session. We guide you through the fundamentals of paddling, balance, and control until you achieve autonomy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="py-24 px-6 bg-luxury-blue text-white">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16 fade-in">
                 <h2 class="text-4xl mb-4 italic">Strategic Locations</h2>
-                <p class="text-slate-400 max-w-2xl mx-auto text-sm tracking-wide">Points selected based on ocean conditions for a safe learning experience.</p>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm tracking-wide">Interactive maps of our coaching spots along Costa Verde.</p>
             </div>
             
             <div class="grid lg:grid-cols-3 gap-8">
-                <div class="bg-slate-800/40 p-6 rounded-3xl border border-slate-700">
-                    <h3 class="text-xl font-bold mb-4 gold-accent italic uppercase tracking-wider">Makaha Beach</h3>
-                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">Located in <strong>Miraflores</strong>. Consistent, gentle waves perfect for your first session.</p>
+                <div class="bg-slate-800/40 p-6 rounded-3xl border border-slate-700 fade-in">
+                    <h3 class="text-xl font-bold mb-4 gold-accent italic uppercase">Makaha Beach</h3>
+                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">Miraflores HQ. Soft waves perfect for your first ever session.</p>
                     <div class="map-container shadow-2xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.4851259250004!2d-77.03960000000001!3d-12.131500000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c820e561bc0d%3A0xcba5a660e43ccd11!2sPlaya%20Makaha!5e0!3m2!1ses-419!2spe!4v1710000000000!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.678385686001!2d-77.0396414!3d-12.1315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c820e506bc9d%3A0x2a966660e43c4d26!2sPlaya%20Makaha!5e0!3m2!1sen!2spe!4v1711234567890" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="bg-slate-800/40 p-6 rounded-3xl border border-slate-700">
-                    <h3 class="text-xl font-bold mb-4 gold-accent italic uppercase tracking-wider">Redondo Beach</h3>
-                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">Found in <strong>Miraflores</strong>. Ideal for perfecting techniques in an iconic atmosphere.</p>
+                <div class="bg-slate-800/40 p-6 rounded-3xl border border-slate-700 fade-in">
+                    <h3 class="text-xl font-bold mb-4 gold-accent italic uppercase">Redondo Beach</h3>
+                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">Miraflores. Ideal for perfecting beginner techniques.</p>
                     <div class="map-container shadow-2xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.48!2d-77.035!3d-12.135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8e0586c8eaf%3A0xfd96e118da22b1d2!2sPlaya%20Redondo!5e0!3m2!1ses-419!2spe!4v1710000000001!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.56943714578!2d-77.0345!3d-12.1384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c819586c8e37%3A0xb956e118942b2bd1!2sPlaya%20Redondo!5e0!3m2!1sen!2spe!4v1711234567891" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="bg-slate-800/40 p-6 rounded-3xl border border-slate-700">
-                    <h3 class="text-xl font-bold mb-4 gold-accent italic uppercase tracking-wider">Barranquito Beach</h3>
-                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">Our spot in the heart of <strong>Barranco</strong>. An authentic and personalized experience.</p>
+                <div class="bg-slate-800/40 p-6 rounded-3xl border border-slate-700 fade-in">
+                    <h3 class="text-xl font-bold mb-4 gold-accent italic uppercase">Barranquito Beach</h3>
+                    <p class="text-xs text-slate-400 mb-6 leading-relaxed">Barranco HQ. Authentic and safe experience close to home.</p>
                     <div class="map-container shadow-2xl">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.48!2d-77.025!3d-12.155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8f73735f831%3A0x29a0e5e5415f7e57!2sPlaya%20Barranquito!5e0!3m2!1ses-419!2spe!4v1710000000002!5m2!1ses-419!2spe" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.354182937!2d-77.0267!3d-12.1524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7ef37bdf931%3A0x27e5e5e7917fbe57!2sPlaya%20Barranquito!5e0!3m2!1sen!2spe!4v1711234567892" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -93,7 +121,7 @@
     </section>
 
     <footer class="py-12 bg-white text-center border-t border-slate-100">
-        <p class="text-slate-400 text-xs tracking-[0.2em] uppercase">© 2026 Peru Surf School | Costa Verde, Lima</p>
+        <p class="text-slate-400 text-xs tracking-[0.2em] uppercase">© 2026 Peru Surf School | Lima, Peru</p>
     </footer>
 
 </body>
