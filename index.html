@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="-z4lrVyg2DK1AGt61dO0CtKEK0Lk8ERZjQEvXmmVM4Y" />
     
-    <title>Peru Surf School | Experiencia Premium de Surf en Lima</title>
-    <meta name="description" content="Aprende surf en Lima con un servicio de lujo. Clases personalizadas para principiantes en Miraflores y Barranco. Equipo premium e instructores bilingües.">
+    <title>Peru Surf School | Clases de Surf Premium en Miraflores y Barranco</title>
+    <meta name="description" content="Aprende surf en Lima con un servicio exclusivo. Clases personalizadas para principiantes en Playa Makaha, Redondo y Barranquito. Instructores bilingües.">
 
     <link rel="alternate" hreflang="es" href="https://perusurfschool.com/" />
     <link rel="alternate" hreflang="en" href="https://perusurfschool.com/en/" />
@@ -19,7 +19,7 @@
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         h1, h2 { font-family: 'Playfair Display', serif; }
         .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('./images/hero-luxury.webp');
             background-size: cover; background-position: center;
         }
         .gold-accent { color: #d4af37; }
@@ -32,6 +32,8 @@
             transition: all 0.3s ease;
         }
         .whatsapp-float:hover { transform: scale(1.1); background-color: #128c7e; }
+        .map-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 1rem; }
+        .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
     </style>
 </head>
 <body class="bg-slate-50">
@@ -42,7 +44,7 @@
 
     <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="font-bold text-2xl tracking-tighter text-slate-900">PERU <span class="gold-accent">SURF</span> SCHOOL</span>
+            <span class="font-bold text-2xl tracking-tighter text-slate-900 uppercase">PERU <span class="gold-accent">SURF</span> SCHOOL</span>
             <div class="flex items-center space-x-6 text-sm font-semibold uppercase tracking-widest">
                 <a href="/en/" class="text-slate-400 hover:text-slate-900 transition">English 🇺🇸</a>
                 <span class="text-slate-900 border-b-2 border-slate-900">Español 🇵🇪</span>
@@ -53,52 +55,47 @@
     <header class="hero-bg h-screen flex flex-col items-center justify-center text-center text-white px-6">
         <span class="gold-accent uppercase tracking-[0.3em] mb-4 font-semibold text-sm">Exclusividad en el Mar</span>
         <h1 class="text-5xl md:text-8xl mb-6">El Arte de Deslizarse</h1>
-        <p class="text-lg md:text-xl mb-12 max-w-2xl font-light leading-relaxed">Experiencias de surf personalizadas en Lima para quienes buscan excelencia, seguridad y un servicio de primer nivel.</p>
+        <p class="text-lg md:text-xl mb-12 max-w-2xl font-light leading-relaxed">Experiencias de surf personalizadas para quienes buscan excelencia y seguridad.</p>
         <a href="https://wa.me/51966743495?text=Hola!%20Deseo%20consultar%20por%20una%20clase%20privada%20de%20surf" class="border border-white hover:bg-white hover:text-slate-900 px-12 py-4 rounded-full transition duration-500 uppercase text-sm tracking-widest">
             Consultar Disponibilidad
         </a>
     </header>
 
-    <section class="py-24 px-6 max-w-6xl mx-auto">
-        <div class="text-center mb-20">
-            <h2 class="text-4xl text-slate-900 mb-4">Diseñado para Principiantes</h2>
-            <div class="w-20 h-1 bg-luxury-blue mx-auto"></div>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-16">
-            <div class="space-y-4">
-                <h3 class="text-xl font-bold gold-accent uppercase tracking-tighter italic">01. Cero Experiencia</h3>
-                <p class="text-slate-600 leading-relaxed">No necesitas saber nada. Nuestro método está diseñado para que logres pararte en tu primera sesión con total seguridad.</p>
+    <section class="py-24 px-6 bg-luxury-blue text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl mb-4 italic">Ubicaciones Estratégicas</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Seleccionamos el punto perfecto según las condiciones del mar para tu nivel de aprendizaje.</p>
             </div>
-            <div class="space-y-4">
-                <h3 class="text-xl font-bold gold-accent uppercase tracking-tighter italic">02. Equipo Premium</h3>
-                <p class="text-slate-600 leading-relaxed">Usamos tablas estables de alta gama y wetsuits que garantizan tu comodidad y temperatura en el agua.</p>
-            </div>
-            <div class="space-y-4">
-                <h3 class="text-xl font-bold gold-accent uppercase tracking-tighter italic">03. Coaching Privado</h3>
-                <p class="text-slate-600 leading-relaxed">Atención 1-a-1 o grupos ultra reducidos para asegurar una progresión rápida y personalizada.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-luxury-blue py-24 text-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
-                <div>
-                    <h2 class="text-4xl mb-6 italic">Ubicaciones Estratégicas</h2>
-                    <p class="text-slate-400 mb-8 leading-relaxed">Elegimos el mejor punto de la Costa Verde según las condiciones del mar para tu nivel.</p>
-                    <ul class="space-y-4 text-sm tracking-wide uppercase">
-                        <li>Playa Makaha (Miraflores) <span class="gold-accent ml-2">●</span></li>
-                        <li>Playa Redondo (Miraflores) <span class="gold-accent ml-2">●</span></li>
-                        <li>Playa Barranquito (Barranco) <span class="gold-accent ml-2">●</span></li>
-                    </ul>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 hover:border-gold-accent transition duration-500">
+                    <h3 class="text-2xl font-bold mb-4 gold-accent italic">Playa Makaha</h3>
+                    <p class="text-sm text-slate-300 mb-6">Ubicada en <strong>Miraflores</strong>. Olas suaves y constantes ideales para principiantes.</p>
+                    <div class="map-container shadow-2xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3900.864155106197!2d-77.03844038518671!3d-12.1296265914124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d820e518bcbd%3A0x2ba5a660e43ccde6!2sPlaya%20Makaha!5e0!3m2!1ses!2spe!4v1711200000000!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 hover:border-gold-accent transition duration-500">
+                    <h3 class="text-2xl font-bold mb-4 gold-accent italic">Playa Redondo</h3>
+                    <p class="text-sm text-slate-300 mb-6">Ubicada en <strong>Miraflores</strong>. Perfecta para perfeccionar la técnica en un ambiente emblemático.</p>
+                    <div class="map-container shadow-2xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3900.793853106197!2d-77.0313487!3d-12.133025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d7e0586c8e8b%3A0xfdb61e1bd92ca2d2!2sPlaya%20Redondo!5e0!3m2!1ses!2spe!4v1711200000001!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-3xl border border-slate-700 hover:border-gold-accent transition duration-500">
+                    <h3 class="text-2xl font-bold mb-4 gold-accent italic">Playa Barranquito</h3>
+                    <p class="text-sm text-slate-300 mb-6">Nuestra sede en el corazón de <strong>Barranco</strong>. Una experiencia auténtica y personalizada.</p>
+                    <div class="map-container shadow-2xl">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3900.671355106197!2d-77.0267154!3d-12.14326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b7ef37bd3931%3A0x2780e5e7d15fbe57!2sPlaya%20Barranquito!5e0!3m2!1ses!2spe!4v1711200000002!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="py-12 bg-white text-center border-t border-slate-100">
-        <p class="text-slate-400 text-xs tracking-[0.2em] uppercase mb-4">&copy; 2026 Peru Surf School | Costa Verde, Lima</p>
+        <p class="text-slate-400 text-xs tracking-[0.2em] uppercase">&copy; 2026 Peru Surf School | Costa Verde, Lima</p>
     </footer>
 
 </body>
